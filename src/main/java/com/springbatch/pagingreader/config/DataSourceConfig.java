@@ -24,15 +24,13 @@ public class DataSourceConfig {
 	@Bean
 	BatchConfigurer configurer(@Qualifier("batchDataSource") DataSource dataSource){
 	    return new DefaultBatchConfigurer(dataSource);
-	}
-	
+	}	
 	
 	@Bean(name="appDataSource")
 	@ConfigurationProperties(prefix = "app.datasource")
 	public DataSource appDataSource() {
 		return DataSourceBuilder.create().build();
 	}
-
 	
 	@Bean(name="app2DataSource")
 	@ConfigurationProperties(prefix = "app2.datasource")

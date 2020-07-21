@@ -1,3 +1,5 @@
+CREATE TABLE cliente (nome TEXT,sobrenome TEXT,idade TEXT,email TEXT);
+
 INSERT INTO cliente VALUES ("Zeca 1", "Silva", "30", "zeca1@test.com");
 INSERT INTO cliente VALUES ("Zeca 2", "Silva", "30", "zeca2@test.com");
 INSERT INTO cliente VALUES ("Zeca 3", "Silva", "30", "zeca3@test.com");
@@ -7,3 +9,10 @@ INSERT INTO cliente VALUES ("Zeca 6", "Silva", "30", "zeca6@test.com");
 INSERT INTO cliente VALUES ("Zeca 7", "Silva", "30", "zeca7@test.com");
 INSERT INTO cliente VALUES ("Zeca 8", "Silva", "30", "zeca8@test.com");
 INSERT INTO cliente VALUES ("Zeca 9", "Silva", "30", "zeca9@test.com");
+
+    
+CREATE TABLE transacao (id TEXT,email TEXT,nome TEXT,valor numeric(5,2));
+
+INSERT INTO transacao VALUES ("1", "zeca1@test.com", "Zeca1", 30.00);
+INSERT INTO transacao VALUES ("2", "zeca2@test.com", "Zeca2", 11.00);
+INSERT INTO transacao VALUES ("3", "zeca7@test.com", "Zeca7", 14.00);

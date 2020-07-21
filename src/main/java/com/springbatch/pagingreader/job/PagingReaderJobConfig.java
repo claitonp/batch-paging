@@ -13,7 +13,7 @@ import com.springbatch.pagingreader.listener.ClienteJobListener;
 
 @EnableBatchProcessing
 @Configuration
-public class JdbcPagingReaderJobConfig {
+public class PagingReaderJobConfig {
 	
 	@Autowired
 	private JobBuilderFactory factory;
@@ -24,7 +24,7 @@ public class JdbcPagingReaderJobConfig {
 	@Bean
 	public Job job(Step step) {
 		return factory
-				.get("jdbcPagingReaderJob")
+				.get("pagingReaderJob")
 				.start(step)
 				.incrementer(new RunIdIncrementer())
 				.listener(listener)

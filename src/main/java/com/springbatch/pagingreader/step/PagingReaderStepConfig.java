@@ -20,7 +20,7 @@ import com.springbatch.pagingreader.listener.ClienteSkipListener;
 import com.springbatch.pagingreader.listener.ClienteStepListener;
 
 @Configuration
-public class JdbcPagingReaderStepConfig {
+public class PagingReaderStepConfig {
 	
 	@Autowired
 	private StepBuilderFactory factory;
@@ -30,7 +30,7 @@ public class JdbcPagingReaderStepConfig {
 			         ItemWriter<Cliente> writer, 
 			         ItemProcessor<ClienteApp, Cliente> processor) {
 		return factory
-				.get("jdbcPagingReaderStep")
+				.get("pagingReaderStep")
 				.<ClienteApp, Cliente>chunk(2)
 				.reader(reader)
 				.writer(writer)
