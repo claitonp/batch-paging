@@ -1,13 +1,8 @@
 package com.springbatch.pagingreader.dominio.app;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
-import com.springbatch.pagingreader.dominio.app2.TransacaoApp2;
 
 
 @Entity
