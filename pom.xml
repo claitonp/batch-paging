@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.springbatch</groupId>
 	<artifactId>PagingReaderJob</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>PagingReaderJob</name>
 	<description>Job que lê dados do banco utilizando um paginador</description>
 
